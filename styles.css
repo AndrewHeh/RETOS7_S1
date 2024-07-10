@@ -1,0 +1,75 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: disc;
+  padding: 9px;
+}
+
+/* Estilos generales */
+body {
+  background-color: #242424;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+.Ventajas,
+.Desventajas {
+  font-size: 20px;
+}
+
+/* Variables */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+}
+
+/* Estilos específicos */
+.variable {
+  color: var(--primary-color);
+}
+
+/* Scope */
+.al-externo {
+  color: blue;
+}
+
+.al-interno {
+  color: red;
+}
+
+/* Anidamiento */
+.padre {
+  background-color: lightgray;
+}
+
+.padre .hijo {
+  background-color: gray;
+}
+
+/* Ampersand */
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+
+/* Import */
+.import-ejemplo {
+  color: var(--secondary-color);
+}/*# sourceMappingURL=styles.css.map */
